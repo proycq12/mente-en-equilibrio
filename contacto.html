@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto de Mente en Equilibrio.">
+    <title>Contacto | Mente en Equilibrio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Mente en Equilibrio</h1>
+            <p>Tu opinión ayuda a mejorar este proyecto.</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="salud-mental.html">Salud mental</a>
+                <a href="consejos.html">Consejos</a>
+                <a class="activo" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <p class="etiqueta">FORMULARIO</p>
+            <h2>Comparte tu opinión</h2>
+            <p>Completa los campos para enviar una opinión o sugerencia. Este formulario es demostrativo y no procesa datos en un servidor.</p>
+        </section>
+
+        <form class="formulario" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Escribe tu nombre">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+
+            <label for="tema">Tema de interés:</label>
+            <select id="tema" name="tema" required>
+                <option value="">Selecciona una opción</option>
+                <option value="estres">Estrés académico</option>
+                <option value="organizacion">Organización del tiempo</option>
+                <option value="descanso">Descanso y hábitos</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="opinion">Mensaje:</label>
+            <textarea id="opinion" name="opinion" rows="5" required minlength="10" maxlength="500" placeholder="Escribe tu opinión o sugerencia"></textarea>
+
+            <label class="check">
+                <input type="checkbox" name="aceptacion" required>
+                Confirmo que la información escrita es apropiada para este formulario.
+            </label>
+
+            <button class="boton" type="submit">Enviar formulario</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mente en Equilibrio | Proyecto académico</p>
+    </footer>
+</body>
+</html>
